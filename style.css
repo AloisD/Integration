@@ -1,0 +1,15 @@
+body{
+    background-color: aquamarine;
+}
+
+img {
+    border-radius: 3px;
+}
+
+img:hover{
+    opacity: 0,5;
+}
+
+img:only-of-type{
+    filter: grayscale(100%);
+}
