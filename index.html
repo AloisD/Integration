@@ -1,0 +1,121 @@
+  <!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aloïs DELAUNE">
+    <meta name="description" content="Portfolio of Aloïs Delaune, web developer">
+    <meta name="viewport" content="width=devicewidth, initial-scale=1,0">
+    <title>Monportfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Mon Portfolio</h1>
+      <nav class="dropdown">
+        <button class="dropmenu">Navigation</button>
+        <div class="dropped-links">
+          <a href="#projets" title="Voir mes réalisations">Projets</a>
+          <a href="#études" title="Voir ma formation">Études</a>
+          <a href="#articles" title="Voir mes publications">Articles</a>
+          <a href="#contact" title="Me contacter">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <img class="hover-effect" src="cover-place-holder.jpeg" alt="my happy place">
+        <span>Aloïs Delaune</span>
+      </section>
+      <section id="projets">
+        <div>
+          <h2>Projets réalisés</h2>
+        </div>
+        <div id="project-grid">
+          <div>
+            <img class="hover-effect" src="Placeholder.png" alt="Illustration du projet 1">
+            <article>
+              <h3>Projet 1</h3>
+              Résumé en quelques lignes du projet n°1.</article>
+            <button title="Le projet n°1 en détails">En savoir plus</button>
+          </div>
+          <div>
+            <img class="hover-effect" src="Placeholder.png" alt="Illustration du projet 2">
+            <article>
+              <h3>Projet 2</h3>
+              Résumé en quelques lignes du projet n°2.</article>
+            <button title="Le projet n°2 en détails">En savoir plus</button>
+          </div>
+          <div>
+            <img class="hover-effect" src="Placeholder.png" alt="Illustration du projet 3">
+            <article>
+              <h3>Projet 3</h3>
+              Résumé en quelques lignes du projet n°3.</article>
+            <button title="Le projet n°3 en détails">En savoir plus</button>
+          </div>
+        </div>
+      </section>
+      <section id="études">
+        <div>
+          <h2>Études</h2>
+          <img class="hover-effect" src="profilepic-place-holder.jpeg" alt="Photographie de Aloïs Delaune">
+          <ul>
+            <li>Delaune</li>
+            <li>Aloïs</li>
+            <li>36 ans</li>
+            <li>0643543879</li>
+          </ul>
+        </div>
+        <ul>
+          <li>date1</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam quia qui labore omnis delectus cum doloremque incidunt architecto facere impedit sunt porro, odio repudiandae quidem. Repudiandae omnis incidunt illo.</li>
+          <li>date2</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam quia qui labore omnis delectus cum doloremque incidunt architecto facere impedit sunt porro, odio repudiandae quidem. Repudiandae omnis incidunt illo.<li>
+          <li>date3</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam quia qui labore omnis delectus cum doloremque incidunt architecto facere impedit sunt porro, odio repudiandae quidem. Repudiandae omnis incidunt illo.</li>
+          <li>date4</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam quia qui labore omnis delectus cum doloremque incidunt architecto facere impedit sunt porro, odio repudiandae quidem. Repudiandae omnis incidunt illo.</li>
+        </ul>
+      </section>
+      <section id="articles">
+        <div>
+          <h2>Articles</h2>
+        </div>
+        <div id="article-grid">
+          <div>
+            <img class="hover-effect" src="Placeholder.png" alt="illsutration de l'article 1">
+            <h3>Titre de l'article 1</h3>
+            <article>
+              Rapide résumé de l'article 1.
+            </article>
+            <button title="Lire l'article 1">Lire</button>
+            <button title="Voir les commentaires">Commentaires</button>
+          </div>
+          <div>
+            <img class="hover-effect" src="Placeholder.png" alt="illsutration de l'article 2">
+            <h3>Titre de l'article 2</h3>
+            <article>
+              Rapide résumé de l'article 2.
+            </article>
+            <button title="Lire l'article 2">Lire</button>
+            <button title="Voir les commentaires">Commentaires</button>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div>
+          <h2>Contact</h2>
+        </div>
+        <form action="/messages" method="get">
+          <label for="name">Nom et Prénom :</label><br>
+          <input type="text" id="name" name="name" placeholder="votre nom" title="Entrez votre nom ici"><br>
+          <label for="email">email</label><br>
+          <input type="email" id="email" name="email" placeholder="votre adresse" title="Laissez moi votre adresse email ici"><br>
+          <label for="message">Message</label><br>
+          <textarea name="message" id="message" cols="150" rows="10" placeholder="Votre message" title="Laissez moi un message ici"></textarea><br>
+          <input type="submit" value="Envoyer" title="Envoyer votre message">
+        </form>
+      </section>
+    </main>
+    <footer>monportefolio.com</footer>
+  </body>
+  </html>
