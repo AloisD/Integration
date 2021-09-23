@@ -1,4 +1,23 @@
-body{
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropped-links {
+    display: none;
+    position: absolute;
+    background-color: aquamarine;
+}
+
+.dropped-links a {
+    display: block;
+}
+
+.dropdown:hover .dropped-links {
+    display: block;
+}
+
+body {
     background-color: aquamarine;
 }
 
@@ -6,10 +25,10 @@ img {
     border-radius: 3px;
 }
 
-.hover-effect:hover{
+.hover-effect:hover {
     opacity: 50%;
 }
 
-#études div img:nth-child(2){
+#études div img:nth-child(2) {
     filter: grayscale(100%);
 }
