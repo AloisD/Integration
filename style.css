@@ -6,8 +6,8 @@ img {
     border-radius: 3px;
 }
 
-img:hover{
-    opacity: 0,5;
+.hover-effect:hover{
+    opacity: 50%;
 }
 
 #études div img:nth-child(2){
