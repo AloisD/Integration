@@ -10,6 +10,6 @@ img:hover{
     opacity: 0,5;
 }
 
-img:only-of-type{
+#études div img:nth-child(2){
     filter: grayscale(100%);
 }
