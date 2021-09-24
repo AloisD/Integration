@@ -29,7 +29,7 @@ img {
     opacity: 50%;
 }
 
-#études div img:nth-child(2) {
+#education div img:nth-child(2) {
     filter: grayscale(100%);
 }
 
