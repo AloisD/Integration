@@ -49,6 +49,24 @@ button {
     min-width: 150px;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.submit {
+    padding: 0.5em;
+    margin: 0.5em;
+    align-self: flex-end;
+    min-width: 150px;
+}
+
 .dropped-links {
     display: none;
     position: absolute;
@@ -60,7 +78,7 @@ button {
     display: block;
 }
 
-.dropdown:hover .dropped-links {
+.dropdown:active .dropped-links {
     display: block;
 }
 
@@ -90,6 +108,11 @@ button {
     flex-direction: column;
 }
 
+.grid-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
 #education div img:nth-child(2) {
     filter: grayscale(100%);
 }
@@ -110,12 +133,24 @@ button {
         width: 40%;
     }
 
+    .dropmenu {
+        display: none;
+    }
+
+    .dropdown:hover .dropped-links{
+        display: flex;
+    }
+
     .dropped-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
         background-color: cyan;
     }
 
     .dropped-links a {
         display: inline-block;
+        margin: 1em;
     }
 
     .grid {
