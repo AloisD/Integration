@@ -33,6 +33,13 @@ img {
     filter: grayscale(100%);
 }
 
+#project-grid {
+    display: grid;
+    grid:auto / 100% 100% 100%;
+    gap: 1em;
+    padding: 1em;
+}
+
 /*desktop mode*/
 @media screen and (min-width:600px) {
     body {
@@ -60,7 +67,14 @@ img {
 
     #project-grid {
         display: grid;
-        grid:50% / auto auto auto;
+        grid:auto / auto auto auto;
+        gap: 1em;
+        padding: 1em;
+    }
+
+    #education-grid {
+        display: grid;
+        grid:auto / auto auto;
         gap: 1em;
         padding: 1em;
     }
