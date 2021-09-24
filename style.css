@@ -2,11 +2,31 @@ body {
     background-color: darkcyan;
 }
 
+h1 {
+    text-align: center;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+h2 {
+    text-align: center;
+}
+
 img {
     border-radius: 3px;
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 1em;
+}
+
+span {
+    background-color: darkcyan;
+    padding: 1em;
+    border-radius: 3px;
+}
+
+article {
     margin: 1em;
 }
 
@@ -22,10 +42,18 @@ input {
     margin: 1em;
 }
 
+button {
+    padding: 0.5em;
+    margin: 0.5em;
+    align-self: center;
+    min-width: 150px;
+}
+
 .dropped-links {
     display: none;
     position: absolute;
     background-color: darkcyan;
+    z-index: 1;
 }
 
 .dropped-links a {
@@ -34,6 +62,18 @@ input {
 
 .dropdown:hover .dropped-links {
     display: block;
+}
+
+.cover {
+    position: relative;
+    text-align: center;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hover-effect:hover {
@@ -45,6 +85,11 @@ input {
     padding: 1em;
 }
 
+.grid div {
+    display: flex;
+    flex-direction: column;
+}
+
 #education div img:nth-child(2) {
     filter: grayscale(100%);
 }
@@ -54,6 +99,12 @@ input {
     body {
         background-color: cyan;
     }
+
+    span {
+        background-color: cyan;
+        padding: 2em;
+    }
+    
     
     input {
         width: 40%;
@@ -69,6 +120,15 @@ input {
 
     .grid {
         display: flex;
+    }
+
+    #project-swipe {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #project-swipe div {
+        flex: 300px;
     }
     
 }
