@@ -31,15 +31,16 @@ article {
 }
 
 textarea {
-    width: 90%;
+    width: 80%;
     padding: 1em;
-    margin: 1em;
+    align-self: center;
 }
 
 input {
     width: 80%;
-    padding: 1em;
     margin: 1em;
+    padding: 1em;
+    align-self: center;
 }
 
 button {
@@ -58,13 +59,6 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-}
-
-.submit {
-    padding: 0.5em;
-    margin: 0.5em;
-    align-self: flex-end;
-    min-width: 150px;
 }
 
 .dropped-links {
@@ -109,6 +103,7 @@ footer {
 }
 
 .grid-vertical {
+    margin: 1em;
     display: flex;
     flex-direction: column;
 }
@@ -131,6 +126,9 @@ footer {
     
     input {
         width: 40%;
+        max-width: 300px;
+        align-self: flex-start;
+
     }
 
     .dropmenu {
@@ -164,6 +162,10 @@ footer {
 
     #project-swipe div {
         flex: 300px;
+    }
+
+    .submit {
+        align-self: flex-end;
     }
     
 }
