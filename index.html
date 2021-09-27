@@ -6,9 +6,10 @@
   <meta name="description" content="Portfolio of Aloïs Delaune, web developer">
   <meta name="viewport" content="width=devicewidth, initial-scale=1,0">
   <title>Monportfolio</title>
-  <link rel="stylesheet" href="style.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -29,10 +30,6 @@
       <img class="hover-effect" src="cover-place-holder.jpeg" alt="my happy place">
       <span class="centered-text"><strong>Aloïs Delaune</strong></span>
     </div>
-    <!-- boot strap test
-      <button class="btn btn-succes" onclick="$(this).hide()">
-      Click me!
-    </button>-->
     <section id="projets">
       <div>
         <h2>Projets réalisés</h2>
@@ -64,18 +61,20 @@
         </div>
       </div>
     </section>
-    <section id="education">
-      <div>
-        <h2>Études</h2>
+    <section  class="container-fluid" id="education">
+      <div class="row">
+        <h2 class="col">Études</h2>
       </div>
-      <div class="grid">
-        <ul>
+      <div class="row">
+        <ul class="col-12 col-sm-3">
           <li>Delaune</li>
           <li>Aloïs</li>
           <li>36 ans</li>
           <li>0643543879</li>
         </ul>
-        <img class="hover-effect" src="profilepic-place-holder.jpeg" alt="Photographie de Aloïs Delaune">
+        <img class="col-12 col-sm-9" class="hover-effect" src="profilepic-place-holder.jpeg" alt="Photographie de Aloïs Delaune">
+      </div>
+      <div >
       </div>
       <ul>
         <li>date1</li>

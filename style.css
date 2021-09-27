@@ -17,7 +17,6 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 1em;
 }
 
 span {
@@ -31,7 +30,7 @@ article {
 }
 
 textarea {
-    width: 80%;
+    width: 100%;
     padding: 1em;
     align-self: center;
 }
@@ -108,12 +107,12 @@ footer {
     flex-direction: column;
 }
 
-#education div img:nth-child(2) {
+#education img {
     filter: grayscale(100%);
 }
 
 /*desktop mode*/
-@media screen and (min-width:600px) {
+@media screen and (min-width:576px) {
     body {
         background-color: cyan;
     }
@@ -155,6 +154,10 @@ footer {
         display: flex;
     }
 
+    .submit {
+        align-self: flex-end;
+    }
+
     #project-swipe {
         display: flex;
         flex-wrap: wrap;
@@ -164,8 +167,4 @@ footer {
         flex: 300px;
     }
 
-    .submit {
-        align-self: flex-end;
-    }
-    
 }
