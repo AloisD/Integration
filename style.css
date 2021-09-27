@@ -27,7 +27,6 @@ img {
 }
 
 span {
-    background-color: cyan;
     padding: 1em;
     border-radius: 3px;
 }
@@ -83,8 +82,15 @@ footer {
 }
 
 .cover {
-    position: relative;
+    font-family: 'Poiret One', cursive;
+    color: cyan;
+    font-size: 3em;
     text-align: center;
+}
+
+.cover img{
+    filter: contrast(125%);
+    filter: hue-rotate(90deg);
 }
 
 .centered-text {
@@ -95,7 +101,7 @@ footer {
 }
 
 .hover-effect:hover {
-    opacity: 50%;
+    opacity: 50%; /*remplacer par animation*/
 }
 
 .grid {
