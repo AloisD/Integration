@@ -14,14 +14,11 @@
 <body>
   <header>
     <h1>Mon Portfolio</h1>
-    <nav class="dropdown">
-      <button class="dropmenu">Navigation</button>
-      <div class="dropped-links">
-        <a href="#projets" title="Voir mes réalisations">Projets</a>
-        <a href="#études" title="Voir ma formation">Études</a>
-        <a href="#articles" title="Voir mes publications">Articles</a>
-        <a href="#contact" title="Me contacter">Contact</a>
-      </div>
+    <nav>
+      <a href="#projets" title="Voir mes réalisations">Projets</a>
+      <a href="#études" title="Voir ma formation">Études</a>
+      <a href="#articles" title="Voir mes publications">Articles</a>
+      <a href="#contact" title="Me contacter">Contact</a>
     </nav>
   </header>
   <main>
@@ -65,24 +62,30 @@
         <h2>Études</h2>
       </div>
       <div class="grid">
-        <ul>
-          <li>Delaune</li>
-          <li>Aloïs</li>
-          <li>36 ans</li>
-          <li>0643543879</li>
-        </ul>
-        <img class="hover-effect" src="profilepic-place-holder.jpeg" alt="Photographie de Aloïs Delaune">
+        <div>
+          <ul>
+            <li>Delaune</li>
+            <li>Aloïs</li>
+            <li>36 ans</li>
+            <li>0643543879</li>
+          </ul>
+        </div>
+        <div>
+          <img class="hover-effect" src="profilepic-place-holder.jpeg" alt="Photographie de Aloïs Delaune">
+        </div>
+        <div>
+          <ul>
+            <li>date1</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam quia qui labore omnis delectus cum doloremque incidunt architecto facere impedit sunt porro, odio repudiandae quidem. Repudiandae omnis incidunt illo.</li>
+            <li>date2</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam quia qui labore omnis delectus cum doloremque incidunt architecto facere impedit sunt porro, odio repudiandae quidem. Repudiandae omnis incidunt illo.<li>
+            <li>date3</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam quia qui labore omnis delectus cum doloremque incidunt architecto facere impedit sunt porro, odio repudiandae quidem. Repudiandae omnis incidunt illo.</li>
+            <li>date4</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam quia qui labore omnis delectus cum doloremque incidunt architecto facere impedit sunt porro, odio repudiandae quidem. Repudiandae omnis incidunt illo.</li>
+          </ul>
+        </div>
       </div>
-      <ul>
-        <li>date1</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam quia qui labore omnis delectus cum doloremque incidunt architecto facere impedit sunt porro, odio repudiandae quidem. Repudiandae omnis incidunt illo.</li>
-        <li>date2</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam quia qui labore omnis delectus cum doloremque incidunt architecto facere impedit sunt porro, odio repudiandae quidem. Repudiandae omnis incidunt illo.<li>
-        <li>date3</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam quia qui labore omnis delectus cum doloremque incidunt architecto facere impedit sunt porro, odio repudiandae quidem. Repudiandae omnis incidunt illo.</li>
-        <li>date4</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam quia qui labore omnis delectus cum doloremque incidunt architecto facere impedit sunt porro, odio repudiandae quidem. Repudiandae omnis incidunt illo.</li>
-      </ul>
     </section>
     <section id="articles">
       <div>
@@ -109,18 +112,17 @@
         </div>
       </div>
     </section>
-    <hr>
     <section id="contact">
       <div>
         <h2>Contact</h2>
       </div>
       <form class="grid-vertical" action="/messages" method="get">
-        <label for="name">Nom et Prénom :</label><br>
-        <input type="text" id="name" name="name" placeholder="votre nom" title="Entrez votre nom ici"><br>
-        <label for="email">email</label><br>
-        <input type="email" id="email" name="email" placeholder="votre adresse" title="Laissez moi votre adresse email ici"><br>
-        <label for="message">Message</label><br>
-        <textarea name="message" id="message" cols="20" rows="10" placeholder="Votre message" title="Laissez moi un message ici"></textarea><br>
+        <label for="name">Nom et Prénom :</label>
+        <input type="text" id="name" name="name" placeholder="votre nom" title="Entrez votre nom ici">
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" placeholder="votre adresse" title="Laissez moi votre adresse email ici">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="20" rows="10" placeholder="Votre message" title="Laissez moi un message ici"></textarea>
         <input class="submit" type="submit" value="Envoyer" title="Envoyer votre message">
       </form>
     </section>
