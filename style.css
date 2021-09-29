@@ -7,6 +7,40 @@ body {
     overflow-x: hidden;
 }
 
+/*
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-rows: auto;
+}
+
+.cover {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#projects {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#education {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#articles {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#contact {
+    grid-column: 1;
+    grid-row: 5;
+}
+*/
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -56,6 +90,7 @@ h3 {
 
 /* css for the carousel */
 label.carousel {
+    cursor: url('/cursor-ultralight.png'), auto;
 	background: #05668D;
 	color: #F0F3BD;
 	transition: transform 400ms ease-out;
@@ -69,8 +104,12 @@ label.carousel {
 	background-size: cover;
 }
 
+.carousel img {
+    margin-inline: auto;
+}
+
+
 form.carousel {
-	position: absolute;
 	left: 0;
 	right: 0;
 	white-space: nowrap;
@@ -120,6 +159,7 @@ label.carousel[for="project2"] {
 
 label.carousel:before,
 label.carousel:after {
+    cursor: url('/cursor-light-hover.png'), auto;
 	color: #F0F3BD;
 	display: block;
 	background: #028090;
@@ -130,7 +170,6 @@ label.carousel:after {
 	line-height: 10rem;
 	top: 50%;
 	transform: translate3d(0, -50%, 0);
-	cursor: pointer;  /*remplacer*/
 }
 
 label.carousel:before {
@@ -146,7 +185,7 @@ label.carousel:after {
 	border-top-right-radius: 25px;
 	border-bottom-right-radius: 25px;
 }
-/**/
+/* end of carousel styling */
 
 img {
     border-radius: 3px;
@@ -233,7 +272,7 @@ em {
     text-align: center;
 }
 
-.cover img{
+.cover img {
     filter: contrast(125%);
     filter: hue-rotate(0deg);
     margin: 0;
