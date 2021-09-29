@@ -30,7 +30,32 @@
       <div>
         <h2>Projets réalisés</h2>
       </div>
-      <div class="grid" id="project-swipe"> <!--l'id swipe permettra de désigner ces articles quand je saurai les faire swipables-->
+      <form class="carousel">
+        <input class="carousel" type="radio" name="fancy" autofocus value="project1" id="project1"/>
+        <input class="carousel" type="radio" name="fancy" value="project2" id="project2"/>
+        <input class="carousel" type="radio" name="fancy" value="project3" id="project3"/>
+        <label class="carousel" for="project1">
+          <article>
+              <h3>Projet 1</h3>
+              Résumé en quelques lignes du projet n°1.
+          </article>
+        </label>
+        <label class="carousel" for="project2">
+          <article>
+              <h3>Projet 2</h3>
+              Résumé en quelques lignes du projet n°2.
+          </article>
+        </label>
+        <label class="carousel" for="project3">
+          <article>
+              <h3>Projet 3</h3>
+              Résumé en quelques lignes du projet n°3.
+          </article>
+        </label>
+        <div class="keys">&#9664; &#9670; &#9654;</div>
+      </form>
+      <!--
+      <div class="grid" id="project-swipe">
         <div>
           <img class="hover-effect" src="Placeholder.png" alt="Illustration du projet 1">
           <article>
@@ -56,6 +81,7 @@
           <button title="Le projet n°3 en détails">En savoir plus</button>
         </div>
       </div>
+      -->
     </section>
     <section id="education">
       <div>
