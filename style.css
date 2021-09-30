@@ -202,7 +202,7 @@ span {
     border-radius: 3px;
 }
 
-article {
+p {
     margin: 1em;
 }
 
@@ -309,6 +309,14 @@ em {
     flex-direction: column;
 }
 
+.grid h3{
+    text-align: center;
+}
+
+.grid p{
+    text-align: center;
+}
+
 .grid-vertical {
     display: flex;
     flex-direction: column;
@@ -363,7 +371,7 @@ em {
     line-height: 150%;
 }
 
-.education-list article{
+.education-list p{
     text-align: justify;
 }
 
@@ -402,7 +410,7 @@ em {
         max-width: 100%;
     }
 
-    .education-list article{
+    .education-list p{
         text-align: center;
     }
 

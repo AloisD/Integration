@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="author" content="Aloïs DELAUNE">
   <meta name="description" content="Portfolio of Aloïs Delaune, web developer">
-  <meta name="viewport" content="width=devicewidth, initial-scale=1,0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monportfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,26 +36,26 @@
         <input class="carousel" type="radio" name="fancy" value="project3" id="project3"/>
         <label class="carousel" for="project1">
           <img class="hover-effect carousel" src="Placeholder.png" alt="Illustration du projet 1">
-          <article>
+          <p>
             <h3>Projet 1</h3>
             Résumé en quelques lignes du projet n°1.
-          </article>
+          </p>
           <button title="Le projet n°1 en détails">En savoir plus</button>
         </label>
         <label class="carousel" for="project2">
           <img class="hover-effect" src="Placeholder.png" alt="Illustration du projet 2">
-          <article>
+          <p>
             <h3>Projet 2</h3>
             Résumé en quelques lignes du projet n°2.
-          </article>
+          </p>
           <button title="Le projet n°2 en détails">En savoir plus</button>
         </label>
         <label class="carousel" for="project3">
           <img class="hover-effect" src="Placeholder.png" alt="Illustration du projet 3">
-          <article>
+          <p>
             <h3>Projet 3</h3>
             Résumé en quelques lignes du projet n°3.
-          </article>
+          </p>
           <button title="Le projet n°3 en détails">En savoir plus</button>
         </label>
         <div class="keys">&#9664; &#9670; &#9654;</div>
@@ -75,19 +75,19 @@
         <img class="education-picture" src="profilepic-place-holder.jpeg" alt="Photographie de Aloïs Delaune">
         <ul class="education-list">
           <li>2004-2008 Supinfogame
-            <article>École de Game Design et gestion de production</article>
+            <p>École de Game Design et gestion de production</p>
           </li>
           <li>2008-2010 Yullaby
-            <article>Game Design et Level Design sur <em>Horse Life</em>, <em>Fire Panic</em>, <em>Péquin Express</em>, etc.</article>
+            <p>Game Design et Level Design sur <em>Horse Life</em>, <em>Fire Panic</em>, <em>Péquin Express</em>, etc.</p>
           </li>
           <li>2010 Game Atelier
-            <article>Level Design sur <em>Flying Hamster</em>.</article>
+            <p>Level Design sur <em>Flying Hamster</em>.</p>
           </li>
           <li>2018 Game Atelier
-            <article>Level Design sur <em>Monster Boy and the Cursed Kingdom</em>.</article>
+            <p>Level Design sur <em>Monster Boy and the Cursed Kingdom</em>.</p>
           </li>
           <li>2021-2022 DonkeySchool
-            <article>Formation de développement web et mobile.</article>
+            <p>Formation de développement web et mobile.</p>
           </li>
         </ul>
       </div>
@@ -99,19 +99,15 @@
       <div class="grid">
         <div>
           <img class="hover-effect" src="Placeholder.png" alt="illsutration de l'article 1">
-          <article>
-            <h3>Titre de l'article 1</h3>
-            Rapide résumé de l'article 1.
-          </article>
+          <h3>Titre de l'article 1</h3>
+          <p>Rapide résumé de l'article 1.</p>
           <button title="Lire l'article 1">Lire</button>
           <button title="Voir les commentaires">Commentaires</button>
         </div>
         <div>
           <img class="hover-effect" src="Placeholder.png" alt="illsutration de l'article 2">
-          <article>
-            <h3>Titre de l'article 2</h3>
-            Rapide résumé de l'article 2.
-          </article>
+          <h3>Titre de l'article 2</h3>
+          <p>Rapide résumé de l'article 2.</p>
           <button title="Lire l'article 2">Lire</button>
           <button title="Voir les commentaires">Commentaires</button>
         </div>
@@ -126,8 +122,8 @@
         <input type="text" id="name" name="name" placeholder="votre nom" title="Entrez votre nom ici">
         <label for="email">email :</label>
         <input type="email" id="email" name="email" placeholder="votre adresse" title="Laissez moi votre adresse email ici">
-        <label id="message" for="message">Message</label>
-        <textarea name="message" cols="20" rows="10" placeholder="Votre message" title="Laissez moi un message ici"></textarea>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="20" rows="10" placeholder="Votre message" title="Laissez moi un message ici"></textarea>
         <input class="submit" type="submit" value="Envoyer" title="Envoyer votre message">
       </form>
     </section>
