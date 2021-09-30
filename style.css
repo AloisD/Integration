@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 
-/*
+/* projet : tout mettre en grid pour pouvoir basculer l'entête sur le côté
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -92,7 +92,7 @@ label.carousel {
     cursor: url('/cursor-ultralight.png'), auto;
 	background: #05668D;
 	color: #F0F3BD;
-	transition: transform 400ms ease-out;
+	transition: 400ms ease-out;
 	display: inline-block;
 	width: 100vw;
     min-height: 30vh;
@@ -100,7 +100,6 @@ label.carousel {
 	z-index: 1;
 	text-align: center;
     padding-bottom: 2em;
-	background-size: cover;
 }
 
 .carousel img {
@@ -141,19 +140,23 @@ input.carousel:nth-of-type(3):checked ~ label.carousel:nth-of-type(3){
 }
 
 input.carousel:nth-of-type(1):checked ~ label.carousel {
-	transform: translate3d(0, 0, 0);
+	transform: translateX(0vw)
 }
 
 input.carousel:nth-of-type(2):checked ~ label.carousel {
-	transform: translate3d(-100%, 0, 0);
+	transform: translateX(-100vw)
 }
 
 input.carousel:nth-of-type(3):checked ~ label.carousel {
-	transform: translate3d(-200%, 0, 0);
+	transform: translateX(-200vw)
 }
 
-label.carousel[for="project2"] {
-	background: #00A896;
+label.carousel[for="project2"]{
+	background: #02C39A;
+}
+
+label.carousel[for="project2"] h3{
+	color: #05668D;
 }
 
 label.carousel:before,
@@ -165,8 +168,8 @@ label.carousel:after {
 	position: absolute;
 	padding: 1rem;
 	font-size: 3rem;
-	height: 10rem;
-	line-height: 10rem;
+    height: 5rem;
+    line-height: 5rem;
 	top: 50%;
 	transform: translate3d(0, -50%, 0);
 }
@@ -323,7 +326,7 @@ em {
     margin: 1em;
     padding: 0 1em;
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
     "id"
@@ -417,5 +420,4 @@ em {
         margin-left: 20%;
         margin-right: 20%;
     }
-
 }
